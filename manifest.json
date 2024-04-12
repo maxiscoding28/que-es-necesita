@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Que Es Necesita",
+  "version": "1.0",
+  "description": "Show me the required fields",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "tabs"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://hashicorp.zendesk.com/agent/tickets/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
