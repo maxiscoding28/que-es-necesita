@@ -1,5 +1,6 @@
 function updateStyles(request) {
   if (request.id == "NEW_TICKET") {
+    console.log("message received")
     var emberViews = document.querySelectorAll('.ember-view');
 
     for (let i = 0; i < emberViews.length; i++) {
